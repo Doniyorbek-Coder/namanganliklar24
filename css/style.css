@@ -123,6 +123,11 @@ img {
   color: #515151;
   font-weight: 500;
 }
+
+.navbar-item a:hover {
+  color: #295091;
+}
+
 .btn {
   padding: 0;
   display: block;
