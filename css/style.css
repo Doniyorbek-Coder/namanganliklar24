@@ -47,7 +47,6 @@ body {
   font-display: swap;
   font-size: 16px;
   line-height: 1.4;
-  color: var(--body-color);
 }
 img {
   max-width: 100%;
@@ -74,20 +73,24 @@ img {
 
 /* HEADER */
 .main-header {
-  display: block;
-  background-color: (var(--header-bg));
+  width: 100%;
+  background-color: var(--header-bg);
   padding: 25px 0;
   border-top: 4px solid var(--header-border);
   margin-bottom: 25px;
 }
 
 .header-top {
+  margin-top: 18px;
+  margin-bottom: 44px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .currencies {
   display: flex;
   margin-left: 20px;
+  margin-right: auto;
   justify-content: space-between;
 }
 .currency {
@@ -125,12 +128,11 @@ img {
   display: block;
   border: none;
   cursor: pointer;
-  /* background: transparent; */
 }
 .search-btn {
   height: 40px;
   width: 40px;
-  background-color: #fff !important;
+  background-color: #fff;
   border-radius: 5px;
   background-image: url(../images/search.png);
   background-repeat: no-repeat;
@@ -142,28 +144,50 @@ img {
 
 .currency-type {
   color: #285193;
-  font-weight: 500;
+  font-weight: 700;
   margin-right: 5px;
   margin-left: 15px;
 }
 
 .telegram-join {
-  display: flex;
-  align-items: center;
   padding: 10px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    color-stop(15.07%, #1e96c8),
-    color-stop(85.96%, #37aee2)
-  );
   background: linear-gradient(90deg, #1e96c8 15.07%, #37aee2 85.96%);
   border-radius: 5px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  transition: background 0.3s ease;
+}
+.telegram-join:hover {
+  background: linear-gradient(90deg, #37aee2 15.07%, #1e96c8 85.96%);
+  transition: background 0.3s ease;
 }
 .telegram-link {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
   color: #fff;
+  text-decoration: none;
+}
+.telegram-img {
+  margin-right: 5px;
+}
+.language-option {
+  width: 80px;
+  margin-right: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #535353;
+  background-color: #fff;
+}
+
+.language-option::before {
+  margin-right: 5px;
+  display: block;
+  content: "";
+  background-image: url(../images/uz.png);
+  width: 20px;
+  height: 20px;
 }
