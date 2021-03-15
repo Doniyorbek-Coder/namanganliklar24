@@ -37,7 +37,7 @@ html {
 }
 :root {
   --body-color: #434343;
-  --header-bg: #e5e5e5;
+  --header-bg: #f6f6f9;
   --header-border: #295093;
 }
 body {
@@ -107,7 +107,7 @@ img {
   -webkit-box-shadow: 0px 2px 5px rgb(159 159 159 / 19%);
   box-shadow: 0px 2px 5px rgb(159 159 159 / 19%);
   border-radius: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 }
 
 .navbar-list {
