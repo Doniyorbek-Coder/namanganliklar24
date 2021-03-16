@@ -284,6 +284,7 @@ img {
   display: flex;
   flex-direction: column;
   max-width: 386px;
+  text-decoration: none;
 }
 .news-card:nth-child(2) {
   max-width: 388px;
