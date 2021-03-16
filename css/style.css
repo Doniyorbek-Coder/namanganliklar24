@@ -283,7 +283,6 @@ img {
   display: flex;
   flex-direction: column;
   max-width: 386px;
-  margin-bottom: 38px;
 }
 .news-card:nth-child(2) {
   max-width: 388px;
@@ -313,4 +312,46 @@ img {
   font-size: 14px;
   line-height: 17px;
   color: #6b6d97;
+}
+.notification-container {
+  padding: 33px;
+  display: flex;
+  background: rgba(239, 186, 84, 0.18);
+  border-radius: 5px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.notification-container::before {
+  display: block;
+  content: "";
+  background-image: url(../images/bell-icon.png);
+  width: 31px;
+  height: 35px;
+}
+.notification-title {
+  margin: 0;
+  margin-left: 18px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.notification-btn {
+  padding: 8px;
+  margin-left: auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    #fe5c28 0%,
+    rgba(255, 139, 54, 0.9) 88.43%
+  );
+  border-radius: 5px;
+  border: none;
+}
+
+.site-news > * {
+  margin-bottom: 38px;
 }
