@@ -7,6 +7,6 @@ function requestPermission() {
 
   Notification.requestPermission(function (result) {
     if ((result.value = "granted"))
-      $status.innerText = "Bildirishnomalar yoqilgan";
+      $status.innerText = "Bildirishnomalar yoqilgan 🙂";
   });
 }
