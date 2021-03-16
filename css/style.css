@@ -226,6 +226,7 @@ img {
   display: block;
   content: "";
   background-image: url(../images/coronavirusimg.png);
+  background-repeat: no-repeat;
   width: 56px;
   height: 45px;
 }
