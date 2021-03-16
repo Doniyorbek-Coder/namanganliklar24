@@ -234,7 +234,11 @@
                 Yangiliklarni birinchi bo'lib bilishni xohlaysizmi?
                 xabarnomalarni ulang!
               </h3>
-              <button class="btn notification-btn">
+              <button
+                class="btn notification-btn"
+                id="status"
+                onclick="requestPermission()"
+              >
                 Bildirishnomalarni yoqing!
               </button>
             </div>
@@ -242,5 +246,6 @@
         </div>
       </section>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
