@@ -77,7 +77,7 @@ img {
   background-color: var(--header-bg);
   padding: 25px 0;
   border-top: 4px solid var(--header-border);
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 
 .header-top {
@@ -195,4 +195,81 @@ img {
   background-image: url(../images/uz.png);
   width: 20px;
   height: 20px;
+}
+
+.covid-list {
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  list-style-type: none;
+  background-color: var(--header-bg);
+  border-radius: 5px;
+}
+.covid-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.covid-item:not(:last-child) {
+  border-right: 2px solid #eb5569;
+  margin-right: 30px;
+}
+.coronavirus {
+  flex: 1.5;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.coronavirus::before {
+  margin-right: 25px;
+  display: block;
+  content: "";
+  background-image: url(../images/coronavirusimg.png);
+  width: 56px;
+  height: 45px;
+}
+.patients::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  background-image: url(../images/medical-mask.png);
+  width: 37px;
+  height: 39px;
+}
+.health::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  background-image: url(../images/cil_smile.png);
+  width: 37px;
+  height: 39px;
+}
+.patients {
+  border-right-color: #f4ccd1 !important;
+  color: #db0000;
+}
+.health {
+  border-right-color: #f4ccd1 !important;
+  color: #05b135;
+}
+.dieds::before {
+  margin-right: 20px;
+  display: block;
+  content: "";
+  background-image: url(../images/died.png);
+  width: 38px;
+  height: 39px;
+}
+.covid-amount {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.covid-amount-count {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 5px;
 }
