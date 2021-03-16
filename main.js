@@ -1,3 +1,4 @@
+var $status = document.getElementById("status");
 function requestPermission() {
   if (!("Notification" in window)) {
     alert("Notification API not supported!");
@@ -5,6 +6,7 @@ function requestPermission() {
   }
 
   Notification.requestPermission(function (result) {
-    $status.innerText = result;
+    if ((result.value = "granted"))
+      $status.innerText = "Bildirishnomalar yoqilgan";
   });
 }
